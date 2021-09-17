@@ -3,7 +3,7 @@ import { YearsOfExp, AnnuallyDelivery, Solutions, Statistics, Testimonials } fro
 const LandingPage = () => {
   return (
     <React.Fragment>
-      <div className='space-y-24'>
+      <div className='space-y-12 sm:space-y-24'>
         <section>
           <div class="w-full bg-cover bg-center" style={{ height: '35rem', backgroundImage: 'url(/static/images/landing-screen.jpg)' }}>
             <div class="flex items-center justify-start h-full w-full bg-gray-900 bg-opacity-50 sm:px-24">
@@ -27,7 +27,7 @@ const LandingPage = () => {
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
                   </span>
                   <input class="w-full rounded p-2" type="text" placeholder="Try 'Tracking ID'" />
-                  <button class="bg-red-600 hover:bg-red-300 rounded text-white p-2 pl-4 pr-4">
+                  <button class="bg-red-600 hover:bg-red-300 rounded text-white px-2 py-2 sm:px-4 sm:py-2 ">
                     <p class="font-semibold text-xs">Search</p>
                   </button>
                 </div>
