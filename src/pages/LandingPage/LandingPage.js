@@ -1,5 +1,5 @@
 import React from "react";
-import { YearsOfExp, AnnuallyDelivery, Solutions, Statistics, Testimonials } from './components';
+import { YearsOfExp, AnnuallyDelivery, Solutions, Statistics, Testimonials, TempUtterContainer } from './components';
 const LandingPage = () => {
   return (
     <React.Fragment>
@@ -43,6 +43,9 @@ const LandingPage = () => {
         </section>
         <section>
           <Solutions />
+        </section>
+        <section>
+          <TempUtterContainer />
         </section>
         <section>
           <Statistics />
