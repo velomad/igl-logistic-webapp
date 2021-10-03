@@ -1,6 +1,6 @@
 import React from "react";
 import { Dropdown, InputField } from "../../components";
-import { YearsOfExp, AnnuallyDelivery, Solutions, Statistics, Testimonials } from './components';
+import { AboutUs, WhatsNew, WhatClientSay, HomeBanner } from './components';
 const LandingPage = () => {
   return (
     <React.Fragment>
@@ -11,7 +11,7 @@ const LandingPage = () => {
           backgroundSize: "cover",
           width: "100%",
         }}
-      > 
+      >
         <div className="flex justify-between px-10 py-10 pb-40">
           <div>
             <div>
@@ -39,7 +39,6 @@ const LandingPage = () => {
             />
           </div>
         </div>
-
 
         <div className="bg-yellow py-4">
           <div className='text-gray-dark text-center uppercase'>
@@ -74,11 +73,9 @@ const LandingPage = () => {
           </div>
         </div>
 
-
         <div className="py-20 text-center">
           <h1 className="text-white uppercase">50 Years of experience in handling perishables</h1>
         </div>
-
 
         <div className="bg-yellow py-4">
           <div className='text-gray-dark text-center uppercase'>
@@ -112,40 +109,11 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-
-
       </div>
-
-      <div className="my-8">
-        <div>
-          <h2 className=" text-center font-bold">
-            About Us
-          </h2>
-        </div>
-
-        <div className="py-8 grid grid-cols-2 gap-6 place-items-center px-20">
-
-          <div>
-            <img src="/static/images/landing-screen.jpg" />
-          </div>
-          <div className="bg-red p-4 text-white">
-
-            <div className="py-8">
-              <h2>IG Group</h2>
-            </div>
-            <div className="py-14">
-              IG Logistics is a part of IG International, the largest importer of fresh fruit in India since 50 years. We shape the world of logistics with a strong determination to connect people and goods through innovative and sustainable logistics solutions. Every day, we go above and beyond to meet the needs of our customers. By anticipating challenges and applying our visionary mindset, we advance global trade and bring communities together.
-            </div>
-            <div className=" mx-auto ">
-                <button className="text-gray-dark font-semibold w-full w-1/2 bg-yellow rounded-md text-white px-4 py-1 my-1 ">
-              Track
-            </button>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+      <AboutUs />
+      <WhatsNew />
+      <WhatClientSay />
+      <HomeBanner />
     </React.Fragment >
   );
 };

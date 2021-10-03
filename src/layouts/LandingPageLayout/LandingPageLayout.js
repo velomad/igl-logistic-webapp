@@ -11,6 +11,7 @@ function LandingPageLayout({ children, withFooter }) {
                 {children}
             </div>
             <div>
+                <Footer />
             </div>
         </div>
     )
