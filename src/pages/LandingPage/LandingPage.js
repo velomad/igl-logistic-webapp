@@ -11,7 +11,7 @@ const LandingPage = () => {
           backgroundSize: "cover",
           width: "100%",
         }}
-      >
+      > 
         <div className="flex justify-between px-10 py-10 pb-40">
           <div>
             <div>
@@ -48,7 +48,7 @@ const LandingPage = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-7 py-4 gap-4 place-items-center  items-end ">
+          <div className="px-4 grid grid-cols-7 py-4 gap-4 place-items-center  items-end ">
             <div className="w-full">
               <Dropdown label="pickup location" options={['option 1', 'option 2']} />
             </div>
@@ -87,7 +87,7 @@ const LandingPage = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-7 py-4 gap-4 place-items-center  items-end ">
+          <div className="px-4 grid grid-cols-7 py-4 gap-4 place-items-center  items-end ">
             <div className="w-full">
               <Dropdown label="pickup location" options={['option 1', 'option 2']} />
             </div>
