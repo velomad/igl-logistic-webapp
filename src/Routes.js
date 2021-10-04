@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LandingPageLayout from "./layouts/LandingPageLayout";
 import About from "./pages/About";
+import Auth from "./pages/Auth";
 import LandingPage from "./pages/LandingPage";
 import Services from "./pages/Services";
 import { WithLayoutRoute } from "./routers";
@@ -28,6 +29,12 @@ function Routes() {
           path="/services"
           layout={LandingPageLayout}
           component={Services}
+        />
+        <WithLayoutRoute
+          exact
+          path="/auth"
+          layout={LandingPageLayout}
+          component={Auth}
         />
       </Switch>
     </Router>
