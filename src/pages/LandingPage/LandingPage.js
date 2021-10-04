@@ -67,7 +67,7 @@ const LandingPage = () => {
               <Dropdown label="Vehicle" options={['option 1', 'option 2']} />
             </div>
             <div className="w-full mx-auto">  <button className=" bg-red rounded-md text-white px-4 py-1 my-1 ">
-              Track
+              Get Quote
             </button>
             </div>
           </div>
@@ -84,27 +84,18 @@ const LandingPage = () => {
             </h2>
           </div>
 
-          <div className="px-4 grid grid-cols-7 py-4 gap-4 place-items-center  items-end ">
+          <div className="px-4 flex justify-center px-20 space-x-8 items-end ">
             <div className="w-full">
               <Dropdown label="pickup location" options={['option 1', 'option 2']} />
             </div>
             <div className="w-full">
-              <Dropdown label="Drop off location" options={['option 1', 'option 2']} />
-            </div>
-            <div className="w-full">
-              <InputField label="Departure Date" type="date" />
-            </div>
-            <div className="w-full">
-              <Dropdown label="Product Category" options={['option 1', 'option 2']} />
-            </div>
-            <div className="w-full">
-              <Dropdown label="Weight" options={['option 1', 'option 2']} />
-            </div>
-            <div className="w-full">
               <Dropdown label="Vehicle" options={['option 1', 'option 2']} />
             </div>
+            <div className="w-full">
+              <Dropdown label="Drop off location" options={['option 1', 'option 2']} />
+            </div>
             <div className="w-full mx-auto">  <button className=" bg-red rounded-md text-white px-4 py-1 my-1 ">
-              Track
+              Contact Now
             </button>
             </div>
           </div>
