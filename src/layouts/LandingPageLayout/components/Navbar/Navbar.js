@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <div className="flex justify-between md:px-20 px-4 items-center py-4 bg-primary">
+      <div className="flex justify-between md:px-20 px-4 items-center py-4 bg-yellow">
         <Link to="/">
           <div className="cursor-pointer">
-            <img src="/static/images/logo.png" width="200px" />
+            <img src="/static/images/logo.png" width="160px" />
           </div>
         </Link>
-        <ul className="hidden md:flex space-x-8 items-center">
+        <ul className="hidden md:flex text-gray-dark font-medium space-x-8 items-center">
           <Link to="/about">
-            <li>About</li>
+            <li className='hover:text-red'>About</li>
           </Link>
           <Link to="/services">
-            <li>Services</li>
+            <li className='hover:text-red'>Services</li>
           </Link>
-          <li className="bg-secondary text-white px-4 py-1 rounded-lg">
+          <li className="bg-red text-sm text-white px-4 py-1 rounded-md">
             Signup / Login
           </li>
         </ul>
