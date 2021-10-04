@@ -21,7 +21,7 @@ const Slider = ({
   slides,
   spaceBetweenTab,
   slidesPerViewTab,
-  ItemRender,
+  ItemRender
 }) => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -45,16 +45,16 @@ const Slider = ({
           breakpoints={{
             "@0.75": {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 20
             },
             "@1.00": {
               slidesPerView: 3,
-              spaceBetween: 40,
+              spaceBetween: 40
             },
             "@1.50": {
-              slidesPerView: 5,
-              spaceBetween: 50,
-            },
+              slidesPerView: 3,
+              spaceBetween: 50
+            }
           }}
         >
           {slides?.map((slide, idx) => (
@@ -64,7 +64,7 @@ const Slider = ({
       </div>
 
       {isNavigation && (
-        <div className="flex justify-between absolute z-10 -left-4 -right-4 top-1/2 cursor-pointer text-gray-dark">
+        <div className="flex justify-between absolute z-10 left-4 right-4 top-1/2 cursor-pointer text-gray-dark">
           <div
             ref={prevRef}
             onClick={() => swiperRef.current.swiper.slidePrev()}
