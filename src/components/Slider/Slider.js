@@ -14,6 +14,7 @@ const Slider = ({
   slidesPerView,
   pagination = false,
   isNavigation,
+  navigateArrowColor,
   loop,
   autoplay,
   spaceBetweenDesktop,
@@ -71,7 +72,11 @@ const Slider = ({
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8"
+              className={
+                !!navigateArrowColor
+                  ?  navigateArrowColor +" h-8 w-8"
+                  : "h-8 w-8"
+              }
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -90,7 +95,11 @@ const Slider = ({
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8"
+              className={
+                !!navigateArrowColor
+                  ?  navigateArrowColor +" h-8 w-8"
+                  : "h-8 w-8"
+              }
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

@@ -2,7 +2,7 @@ import React from "react";
 
 const SliderContent = () => {
   return (
-    <div>
+    <div className="bg-gray-lightest p-4 rounded-lg">
       <div class="h-full text-center">
         <img
           alt="testimonial"

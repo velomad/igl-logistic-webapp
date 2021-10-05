@@ -12,7 +12,7 @@ const WhatClientSay = () => {
           </h1>
         </div>
         <section class="text-gray-600 body-font">
-          <div className=" py-10 px-20 relative slider-container ">
+          <div className=" py-10 px-20  rounded-lg relative slider-container ">
             <Slider
               spaceBetween={20}
               isNavigation={true}

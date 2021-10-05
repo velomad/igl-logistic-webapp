@@ -1,30 +1,44 @@
 import React from "react";
+import { Card, InputField } from "../../../../components";
 
 const HomeBanner = () => {
-    return (
-        <React.Fragment>
-            <div class="w-full bg-white  px-5 py-16">
-                <div class="w-full max-w-6xl mx-auto p-10 bg-yellow rounded">
-                    <div class="-mx-3 flex flex-row justify-between items-center">
-                        <div class="px-3 md:w-2/3 mb-10 md:mb-0">
-                            <h1 class="text-4xl md:text-4xl font-bold leading-tight">Isn't in yet...</h1>
-                        </div>
-                        <div class="px-3 w-full">
-                            <form className='flex flex-row justify-end items-center space-x-2'>
-                                <div class="flex">
-                                    <div class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                    <input type="email" class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500" placeholder="email@example.com" />
-                                </div>
-                                <div>
-                                    <button class=" w-full bg-red hover:bg-indigo-700 focus:bg-indigo-700 transition-colors text-white rounded-lg px-7 py-2 font-semibold">Sign Up</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <React.Fragment>
+      <div className="px-10 py-10">
+        <Card background="gray-dark" rounded="lg" classes="py-4">
+          <div className="px-10 flex justify-between">
+            <div>
+              <h2 className="text-white">Isn't In Yet</h2>
             </div>
-        </React.Fragment>
-    )
-}
+
+            <div className="flex items-center space-x-4">
+              <div className="">
+                <InputField placeholder="Your Email Address" />
+              </div>
+              <div className="">
+                <button className="bg-yellow px-8 py-2 rounded-lg">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 text-gray-dark"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default HomeBanner;
