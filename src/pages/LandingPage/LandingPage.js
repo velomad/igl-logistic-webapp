@@ -13,7 +13,7 @@ const LandingPage = () => {
       <section className="">
         <div
           style={{
-            backgroundImage: `url('/static/images/landing-screen.jpg')`,
+            backgroundImage: `url('/static/images/landing-image.png')`,
             backgroundRepeat: "repeat-y",
             backgroundSize: "cover",
             width: "100%"
@@ -22,7 +22,7 @@ const LandingPage = () => {
           <div className="flex justify-between px-10 py-10 pb-40">
             <div>
               <div>
-                <h1 className="text-white pb-4">Quick and reliable, humesha</h1>
+                <h1 className="text-white pb-4">Quick Reliable, Hamesha</h1>
                 <hr className="w-1/2 mx-auto border-2 border-yellow" />
               </div>
             </div>

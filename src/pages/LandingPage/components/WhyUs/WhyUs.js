@@ -48,18 +48,8 @@ const WhyUs = () => {
           </div>
         </div>
 
-        <div className="pt-10 relative">
-          <Slider
-            navigateArrowColor="text-red"
-            spaceBetween={10}
-            isNavigation={true}
-            spaceBetweenDesktop={10}
-            ItemRender={SliderContent}
-            slidesPerView={5}
-            slidesPerViewDesktop={5}
-            slidesPerViewTab={5}
-            slides={data}
-          />
+        <div className="pt-10 ">
+          <img src="/static/images/why-us.png"/>
         </div>
       </section>
     </React.Fragment>
