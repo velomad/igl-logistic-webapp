@@ -2,7 +2,7 @@ import React from "react";
 
 const InputField = ({ label, type, placeholder }) => {
   return (
-    <div className="space-y-1">
+    <div className="space-y-1 w-full">
       <div>
         <label className="capitalize">{label}</label>
       </div>

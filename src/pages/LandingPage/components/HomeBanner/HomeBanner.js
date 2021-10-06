@@ -10,7 +10,6 @@ const HomeBanner = () => {
             <div>
               <h2 className="text-white">Isn't In Yet</h2>
             </div>
-
             <div className="flex items-center space-x-4">
               <div className="">
                 <InputField placeholder="Your Email Address" />

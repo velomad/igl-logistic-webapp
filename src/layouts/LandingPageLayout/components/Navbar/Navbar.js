@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <div className="flex justify-between md:px-20 px-4 items-center py-4 bg-yellow">
+      <div className="flex justify-between md:px-20 px-4 items-center  bg-yellow">
         <Link to="/">
           <div className="cursor-pointer">
-            <img src="/static/images/logo.png" width="160px" />
+            <img src="/static/images/logo.jpg" width="80px" />
           </div>
         </Link>
         <ul className="hidden md:flex text-gray-dark font-medium space-x-8 items-center">

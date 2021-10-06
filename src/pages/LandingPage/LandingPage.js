@@ -5,13 +5,16 @@ import {
   OurFleet,
   WhyUs,
   WhatClientSay,
-  HomeBanner
+  HomeBanner,
+  VehicalAvailability,
+  GetQuote
 } from "./components";
 const LandingPage = () => {
   return (
     <React.Fragment>
       <section className="">
         <div
+          className="p-10"
           style={{
             backgroundImage: `url('/static/images/landing-image.png')`,
             backgroundRepeat: "repeat-y",
@@ -56,47 +59,7 @@ const LandingPage = () => {
             </div>
           </div>
 
-          <div className="bg-yellow py-4">
-            <div className="text-gray-dark text-center uppercase">
-              <h2>Best logistics service here</h2>
-            </div>
-
-            <div className="px-4 grid grid-cols-7 py-4 gap-4 place-items-center  items-end ">
-              <div className="w-full">
-                <Dropdown
-                  label="pickup location"
-                  options={["option 1", "option 2"]}
-                />
-              </div>
-              <div className="w-full">
-                <Dropdown
-                  label="Drop off location"
-                  options={["option 1", "option 2"]}
-                />
-              </div>
-              <div className="w-full">
-                <InputField label="Departure Date" type="date" />
-              </div>
-              <div className="w-full">
-                <Dropdown
-                  label="Product Category"
-                  options={["option 1", "option 2"]}
-                />
-              </div>
-              <div className="w-full">
-                <Dropdown label="Weight" options={["option 1", "option 2"]} />
-              </div>
-              <div className="w-full">
-                <Dropdown label="Vehicle" options={["option 1", "option 2"]} />
-              </div>
-              <div className="w-full mx-auto">
-                {" "}
-                <button className=" bg-red rounded-md text-white px-4 py-1 my-1 ">
-                  Get Quote
-                </button>
-              </div>
-            </div>
-          </div>
+          <GetQuote />
 
           <div className="py-20 text-center">
             <h1 className="text-white uppercase">
@@ -104,37 +67,8 @@ const LandingPage = () => {
             </h1>
           </div>
 
-          <div className="bg-yellow py-4">
-            <div className="text-gray-dark text-center uppercase">
-              <h2 className="uppercase">
-                Todays vehicles availability for cargo
-              </h2>
-            </div>
-
-            <div className="px-4 flex justify-center px-20 space-x-8 items-end ">
-              <div className="w-full">
-                <Dropdown
-                  label="pickup location"
-                  options={["option 1", "option 2"]}
-                />
-              </div>
-              <div className="w-full">
-                <Dropdown label="Vehicle" options={["option 1", "option 2"]} />
-              </div>
-              <div className="w-full">
-                <Dropdown
-                  label="Drop off location"
-                  options={["option 1", "option 2"]}
-                />
-              </div>
-              <div className="w-full mx-auto">
-                {" "}
-                <button className=" bg-red rounded-md text-white px-4 py-1 my-1 ">
-                  Contact Now
-                </button>
-              </div>
-            </div>
-          </div>
+          <VehicalAvailability />
+          
         </div>
         {/* <AboutUs /> */}
         <div className="bg-gray-dark">
