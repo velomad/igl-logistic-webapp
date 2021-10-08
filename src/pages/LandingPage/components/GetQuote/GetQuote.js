@@ -4,12 +4,12 @@ import { Dropdown, Card, InputField } from "../../../../components";
 const GetQuote = () => {
   return (
     <div>
-      <div className="bg-yellow py-2 rounded-lg">
+      <div className="bg-gray-lightest py-2 rounded-lg">
         <div className="text-gray-dark text-center capitalize">
           <h2>Best logistics service here</h2>
         </div>
 
-        <div className="flex  space-x-4 py-4 px-4 items-end justify-around">
+        <div className="md:flex space-y-4 md:space-x-4 py-4 px-4 items-end justify-around">
           <div className="w-full">
             <Dropdown
               label="pickup location"
@@ -34,10 +34,10 @@ const GetQuote = () => {
           <div className="w-full">
             <Dropdown label="Weight" options={["option 1", "option 2"]} />
           </div>
-          <div className="w-full">
+          <div className="w-full ">
             <Dropdown label="Vehicle" options={["option 1", "option 2"]} />
           </div>
-          <button className="w-full bg-red rounded-md text-white px-4 py-1 my-1 ">
+          <button className="w-full bg-red rounded-md text-white px-4 py-1.5 my-1 ">
             Get Quote
           </button>
         </div>

@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <React.Fragment>
       <div className="bg-gray-100">
-        <div class="container px-40 py-8 mx-auto">
+        <div class="container md:px-40 py-8 mx-auto">
           <div class="container py-7 mx-auto">
             <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
               <div class="lg:w-1/6 md:w-1/2 w-full px-4">
@@ -118,10 +118,8 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className='border-b-2 border-gray-300 py-2'>
-            <p className='text-sm text-gray-500 w-full'>More ways to shop: <span className='text-blue-500'>Find a retailer</span> near you. Or call 000800 040 1966.</p>
-          </div>
-          <div className='py-2 flex flex-row justify-between items-center'>
+         
+          {/* <div className='py-2 flex flex-row justify-between items-center'>
             <div className='flex flex-row justify-between items-center'>
               <p className='text-gray-500 text-sm'>
                 Copyright © {currentYear} Logistic. All rights reserved.
@@ -135,7 +133,7 @@ const Footer = () => {
               </div>
             </div>
             <div className='text-gray-500 text-sm'>India</div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* <div className="text-center text-white">

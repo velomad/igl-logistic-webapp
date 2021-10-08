@@ -4,7 +4,7 @@ import { Card, InputField } from "../../../../components";
 const HomeBanner = () => {
   return (
     <React.Fragment>
-      <div className="px-10 py-10">
+      <div className="hidden md:block px-10 py-10">
         <Card background="gray-dark" rounded="lg" classes="py-4">
           <div className="px-10 flex justify-between">
             <div>

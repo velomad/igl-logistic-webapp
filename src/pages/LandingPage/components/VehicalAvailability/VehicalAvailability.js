@@ -4,12 +4,12 @@ import { Card, InputField, Dropdown } from "../../../../components";
 const VehicalAvailability = () => {
   return (
     <div>
-      <div className="bg-yellow py-4 rounded-lg ">
+      <div className="bg-yellow py-4 rounded-lg  ">
         <div className="text-gray-dark text-center uppercase">
           <h2 className="capitalize">Today's vehicles availability for cargo</h2>
         </div>
 
-        <div className="flex justify-center py-4 px-40 space-x-4 items-end">
+        <div className="md:flex justify-center py-4 p-4  md:px-40 md:space-x-4 sapce-y-4 items-end">
           <div className="w-full">
             <Dropdown
               label="pickup location"
@@ -26,7 +26,7 @@ const VehicalAvailability = () => {
             />
           </div>
 
-          <button className="w-full bg-red rounded-md text-white px-4 py-1 my-1 ">
+          <button className="w-full bg-red rounded-md text-white px-4 py-1.5 my-1 ">
             Contact Now
           </button>
         </div>

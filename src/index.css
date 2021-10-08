@@ -10,6 +10,12 @@
   transform: translate(-50%, -50%);
 }
 
+.absolute-right {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* ./src/index.css */
 @tailwind base;
 @tailwind components;

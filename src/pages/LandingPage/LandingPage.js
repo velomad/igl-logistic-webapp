@@ -7,14 +7,15 @@ import {
   WhatClientSay,
   HomeBanner,
   VehicalAvailability,
-  GetQuote
+  GetQuote,
+  Stats
 } from "./components";
 const LandingPage = () => {
   return (
     <React.Fragment>
       <section className="">
         <div
-          className="p-10"
+          className="md:p-10"
           style={{
             backgroundImage: `url('/static/images/landing-image.png')`,
             backgroundRepeat: "repeat-y",
@@ -22,10 +23,10 @@ const LandingPage = () => {
             width: "100%"
           }}
         >
-          <div className="flex justify-between px-10 py-10 pb-40">
+          <div className="md:flex md:space-y-10 space-y-10 justify-between px-10 py-10 pb-40">
             <div>
               <div>
-                <h1 className="text-white pb-4">Quick Reliable, Hamesha</h1>
+                <h1 className="text-white text-center pb-4">Quick Reliable, Hamesha</h1>
                 <hr className="w-1/2 mx-auto border-2 border-yellow" />
               </div>
             </div>
@@ -54,7 +55,7 @@ const LandingPage = () => {
               <input
                 type="search"
                 placeholder="Track Now"
-                className="bg-gray-light rounded-md border border-gray py-2 px-9 w-96"
+                className="bg-gray-light rounded-md border border-gray py-2 px-9 md:w-96"
               />
             </div>
           </div>
@@ -68,11 +69,16 @@ const LandingPage = () => {
           </div>
 
           <VehicalAvailability />
-          
+
         </div>
-        {/* <AboutUs /> */}
         <div className="bg-gray-dark">
           <OurFleet />
+        </div>
+        <div className="">
+          <AboutUs />
+        </div>
+        <div className="">
+          <Stats />
         </div>
         <div className="bg-gray-lightest py-14">
           <WhyUs />

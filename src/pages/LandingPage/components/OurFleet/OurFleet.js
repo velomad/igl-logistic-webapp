@@ -25,11 +25,11 @@ const OurFleet = () => {
                     slidesPerViewDesktop={3}
                     slidesPerViewTab={3}
                     slides={[
-                      { image: "/static/images/truck1.png", title : '14ft Truck' },
-                      { image: "/static/images/truck2.png", title : '32ft Truck' },
-                      { image: "/static/images/truck3.png", title : '40ft Trailer' },
-                      { image: "/static/images/truck4.png", title : '20ft truck' },
-                      { image: "/static/images/truck5.png", title : '24ft truck' }
+                      { image: "/static/images/truck3.png", title: '40ft Trailer' },
+                      { image: "/static/images/truck2.png", title: '32ft Truck' },
+                      { image: "/static/images/truck4.png", title: '20ft truck' },
+                      { image: "/static/images/truck5.png", title: '24ft truck' },
+                      { image: "/static/images/truck1.png", title: '14ft Truck' },
                     ]}
                   />
                 </div>

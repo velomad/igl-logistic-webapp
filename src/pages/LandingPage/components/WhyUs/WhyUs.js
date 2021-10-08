@@ -33,11 +33,11 @@ const WhyUs = () => {
   return (
     <React.Fragment>
       <section className="px-10">
-        <div className="flex justify-around items-start">
+        <div className="md:flex space-y-4 md:space-y-0 justify-around items-start">
           <div>
             <h1 className="font-semibold">Why Choose Us ?</h1>
           </div>
-          <div className="w-1/2 text-justify">
+          <div className="md:w-1/2 text-justify">
             Our work ethic is built on ceaseless hard work and dedication to our
             craft, as well as a commitment to the promises we make. It is due to
             this diligence that we can have more than 5,000 happy customers.
@@ -48,7 +48,7 @@ const WhyUs = () => {
           </div>
         </div>
 
-        <div className="pt-10 ">
+        <div className="hidden md:block pt-10 ">
           <img src="/static/images/why-us.png"/>
         </div>
       </section>

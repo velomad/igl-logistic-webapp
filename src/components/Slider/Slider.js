@@ -39,7 +39,7 @@ const Slider = ({
             swiper.navigation.update();
           }}
           spaceBetween={spaceBetween}
-          slidesPerView={slidesPerView}
+          slidesPerView={1}
           pagination={pagination}
           loop={loop}
           autoplay={autoplay}
